@@ -1,10 +1,30 @@
 <html>
+
   <head>
     <title> Etch-a-Sketch Game </title>
     <link href = style/reset.css type = "text/css" rel = "stylesheet">
     <link href = style/style.css type = "text/css" rel = "stylesheet">
   </head>
+
   <body>
-    <script src="script/script.js"></script>
+    <div class = "main">
+      <p class = "ask"> How many squares for the length and width? </p>
+
+      <form>
+
+        <p class = "subtitle"> 
+          Length (min = 1, max = 10): 
+        </p>
+        <input type = "text" id = "length">
+        <p class = "subtitle"> 
+          Width (min = 1, max = 10): 
+        </p>
+        <input type = "text" id = "width">
+        <br>
+        <input type = "submit" id = "toStart" value = "Submit"> 
+      </form>
+    </div>
+
   </body>
+
 </html>

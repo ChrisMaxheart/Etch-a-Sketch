@@ -1,0 +1,96 @@
+.ask {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+form {
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-left: 30%;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+#length, #width {
+  font-size: 24px;
+}
+
+#toStart {
+  font-size: 22px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*color: white;*/
+  /*background-color: blue;*/
+  /*box-shadow: rgb(0,0,0);*/
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 10fr 3fr;
+}
+
+.title.row {
+  grid-row-start: 1;
+  line-height: 60px;
+}
+
+.main.row {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.area {
+  /*grid-column-start: 2;*/
+  display: grid;
+}
+
+.additional.row {
+  grid-row-start: 3;
+  display: grid;
+  grid-template-columns: 1fr 11fr 1fr;
+}
+
+.color.column {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.color.row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.title {
+  text-align: center;
+  font-family: "Arial";
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
