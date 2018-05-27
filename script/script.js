@@ -46,9 +46,8 @@ function start(row, column) {
     dummy.style.setProperty("grid-template-columns", "repeat("+column+",1fr)");
     for (let j = 0; j < column; j++) {
       let but = document.createElement("button");
-      but.className = "button";
-      but.onmousedown = function(){mouse_check = 1};
-      but.onmouseup = function(){mouse_check = 0};
+      but.className = "game button";
+
       but.onmousemove = function(){if (mouse_check){change_color(but, color_memory)}};
       but.onclick = function(){change_color(but, color_memory)};
       but.touchmove = function(){change_color(but, color_memory)};
@@ -58,4 +57,11 @@ function start(row, column) {
   }
 }
 
-start(15, 15);
+document.onmousedown = function(){mouse_check = 1};
+document.onmouseup = function(){mouse_check = 0};
+
+window.onload = function() {
+  let l = localStorage.getItem("length");
+  let w = localStorage.getItem("width");
+  start(w, l);
+}

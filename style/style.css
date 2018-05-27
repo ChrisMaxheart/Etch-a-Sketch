@@ -6,6 +6,10 @@
   font-size: 30px;
 }
 
+.game.button {
+  background-color: white;
+}
+
 form {
   padding-top: 20px;
   margin-top: 20px;
