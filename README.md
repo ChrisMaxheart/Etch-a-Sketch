@@ -4,6 +4,6 @@ https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch
 
 Result view: https://chrismaxheart.github.io/Etch-a-Sketch/
 Features:
--) custom length and height
--) 20 colours choice (automatic creation by javascript)
--) hold and drag mouse feature
+1. custom length and height
+2. 20 colours choice (automatic creation by javascript)
+3. hold and drag mouse feature
